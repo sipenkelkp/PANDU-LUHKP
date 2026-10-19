@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Permintaan Penghapusan Akun & Data - PANDU-LUHKP</title>
+  <link rel="icon" href="https://sipenkelkp.github.io/PANDU-LUHKP/favicon.ico" type="image/x-icon">
+  <style>
+    :root {
+      --primary: #0284c7;
+      --primary-dark: #0f172a;
+      --danger: #ef4444;
+      --text-main: #334155;
+      --text-muted: #64748b;
+      --bg-light: #f8fafc;
+      --card-bg: #ffffff;
+      --border-color: #e2e8f0;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.7;
+      color: var(--text-main);
+      background-color: var(--bg-light);
+      padding: 0;
+      margin: 0;
+    }
+    header {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      color: #ffffff;
+      padding: 40px 20px;
+      text-align: center;
+      border-bottom: 4px solid var(--danger);
+    }
+    header h1 {
+      font-size: 1.9rem;
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+    header p {
+      color: #94a3b8;
+      font-size: 0.98rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(239, 68, 68, 0.2);
+      color: #f87171;
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      padding: 4px 14px;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    main {
+      max-width: 800px;
+      margin: -20px auto 40px;
+      padding: 0 20px;
+    }
+    .card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+      border: 1px solid var(--border-color);
+      padding: 36px;
+      margin-bottom: 24px;
+    }
+    h2 {
+      color: var(--primary-dark);
+      font-size: 1.25rem;
+      margin-top: 28px;
+      margin-bottom: 14px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid #f1f5f9;
+    }
+    h2:first-of-type {
+      margin-top: 0;
+    }
+    p, ul, ol {
+      margin-bottom: 16px;
+      font-size: 0.96rem;
+    }
+    ul, ol {
+      padding-left: 24px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    .alert-box {
+      background-color: #fff1f2;
+      border-left: 4px solid var(--danger);
+      padding: 16px 20px;
+      border-radius: 6px;
+      margin: 20px 0;
+      font-size: 0.94rem;
+      color: #9f1239;
+    }
+    .btn-delete {
+      display: inline-block;
+      background-color: var(--danger);
+      color: #ffffff;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: background-color 0.2s;
+      margin-top: 10px;
+    }
+    .btn-delete:hover {
+      background-color: #dc2626;
+    }
+    .form-box {
+      background: #f8fafc;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 24px;
+      margin: 24px 0;
+    }
+    .form-box label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 6px;
+      font-size: 0.9rem;
+      color: var(--primary-dark);
+    }
+    .form-box input, .form-box textarea {
+      width: 100%;
+      padding: 10px 14px;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      margin-bottom: 16px;
+      font-size: 0.95rem;
+      font-family: inherit;
+    }
+    .form-box textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--border-color);
+      background-color: #ffffff;
+    }
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="badge">LAYANAN PENGHAPUSAN AKUN & DATA</div>
+    <h1>Permintaan Penghapusan Akun</h1>
+    <p>Aplikasi PANDU-LUHKP (Platform Otomatisasi Pelaporan Penyuluh Perikanan)</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <p>
+        Sesuai dengan ketentuan perlindungan data pribadi dan kebijakan <strong>Google Play Store</strong>, pengguna aplikasi <strong>PANDU-LUHKP</strong> berhak untuk meminta penutupan/penghapusan akun serta penghapusan data pribadi yang tersimpan dalam sistem kami.
+      </p>
+
+      <div class="alert-box">
+        <strong>Perhatian:</strong> Tindakan penghapusan akun bersifat permanen. Setelah akun dihapus, Anda tidak dapat lagi masuk ke aplikasi PANDU-LUHKP dengan kredensial tersebut, dan draf laporan kerja yang belum terarsip secara resmi akan dibersihkan.
+      </div>
+
+      <h2>1. Data yang Akan Dihapus</h2>
+      <p>Saat permohonan penghapusan akun Anda diproses, sistem kami akan menghapus data berikut:</p>
+      <ul>
+        <li><strong>Informasi Autentikasi:</strong> Username, password hash/salt, dan sesi aktif (Session Token).</li>
+        <li><strong>Profil Pengguna:</strong> Nama lengkap, NIP/NIK, gelar, foto profil, dan nomor kontak.</li>
+        <li><strong>Pengaturan Pribadi:</strong> Preferensi target IKI dan catatan draf pribadi penyuluh.</li>
+      </ul>
+
+      <h2>2. Data yang Mungkin Dipertahankan (Retensi Kebijakan Kedinasan)</h2>
+      <p>
+        Laporan resmi kegiatan penyuluhan (seperti Laporan Kunjungan Lapangan / LKL dan Laporan Bulanan) yang telah disahkan dan diarsipkan untuk kebutuhan pertanggungjawaban kedinasan instansi pembina (KKP/BRSDM/BRPBATPP) akan tetap dipertahankan dalam arsip pangkalan data dinas sesuai ketentuan perundang-undangan kearsipan pemerintah, namun data akses login individu Anda akan dinonaktifkan sepenuhnya.
+      </p>
+
+      <h2>3. Cara Mengajukan Penghapusan Akun</h2>
+      <p>Anda dapat mengajukan permohonan penghapusan akun melalui salah satu cara berikut:</p>
+
+      <div class="form-box">
+        <h3 style="margin-bottom: 14px; font-size: 1.1rem; color: var(--primary-dark);">Kirim Permohonan via Email Otomatis</h3>
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 16px;">
+          Klik tombol di bawah ini untuk membuka aplikasi email Anda dengan format permohonan yang telah terisi otomatis:
+        </p>
+
+        <a class="btn-delete" href="mailto:sipenkelkp@gmail.com,pandu.luhkp@gmail.com?subject=Permintaan%20Penghapusan%20Akun%20PANDU-LUHKP&body=Halo%20Admin%20PANDU-LUHKP%2C%0A%0ASaya%20ingin%20mengajukan%20permohonan%20penghapusan%20akun%20dan%20data%20saya%20pada%20aplikasi%20PANDU-LUHKP.%0A%0ABerikut%20adalah%20informasi%20akun%20saya%3A%0A-%20Username%3A%20%5BMasukkan%20Username%20Anda%5D%0A-%20Nama%20Lengkap%3A%20%5BMasukkan%20Nama%20Anda%5D%0A-%20Alasan%20(opsional)%3A%20%0A%0AMohon%20bantuannya%20untuk%20memproses%20penghapusan%20akun%20tersebut.%20Terima%20kasih.">
+          ✉️ Ajukan Penghapusan via Email
+        </a>
+      </div>
+
+      <h2>4. Jangka Waktu Pemrosesan</h2>
+      <p>
+        Setiap permohonan penghapusan akun akan diverifikasi oleh administrator sistem dalam waktu <strong>3 s.d. 7 hari kerja</strong>. Setelah proses verifikasi identitas selesai, akun Anda akan dihapus secara permanen dari pangkalan data sistem.
+      </p>
+
+      <h2>5. Kontak Bantuan</h2>
+      <p>Jika ada pertanyaan lebih lanjut mengenai pengelolaan data atau proses penghapusan akun, Anda dapat menghubungi:</p>
+      <ul>
+        <li><strong>Email Layanan:</strong> <a href="mailto:sipenkelkp@gmail.com">sipenkelkp@gmail.com</a> atau <a href="mailto:pandu.luhkp@gmail.com">pandu.luhkp@gmail.com</a></li>
+        <li><strong>Platform:</strong> PANDU-LUHKP (Platform Otomatisasi Pelaporan Penyuluh Perikanan)</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 PANDU-LUHKP. Seluruh Hak Cipta Dilindungi Undang-Undang. | <a href="privacy-policy.html">Kebijakan Privasi</a></p>
+  </footer>
+
+</body>
+</html>
